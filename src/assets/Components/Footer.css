@@ -1,0 +1,30 @@
+.footer {
+  background-color: #101a30;
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.footer div {
+  flex: 1;
+}
+
+.footer h3 {
+  color: #20c4b5;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: #ddd;
+  font-size: 15px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.footer p:hover {
+  color: #20c4b5;
+  cursor: pointer;
+}

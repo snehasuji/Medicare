@@ -1,0 +1,171 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8fa;
+  color: #263746;
+}
+
+/* Navbar */
+.dept-navbar {
+  background: linear-gradient(90deg, #117c77, #16b7a6);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dept-navbar h2 {
+  font-size: 23px;
+}
+
+.dept-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.dept-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.dept-links a:hover {
+  color: #d5fff8;
+}
+
+/* Heading */
+.dept-heading {
+  padding: 25px 20px 15px;
+}
+
+.dept-heading h2 {
+  color: #187d78;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.dept-heading p {
+  color: #56636b;
+  font-size: 14px;
+}
+
+/* Department Cards */
+.dept-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px 20px 35px;
+}
+
+.dept-card {
+  background-color: white;
+  padding: 22px;
+  border-radius: 12px;
+  border-top: 4px solid #18b5a5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.dept-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.dept-card h3 {
+  color: #187d78;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.dept-card p {
+  color: #46535b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Footer */
+.dept-footer {
+  background-color: #101a30;
+  color: white;
+  padding: 35px 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.dept-footer div {
+  flex: 1;
+  min-width: 180px;
+}
+
+.dept-footer h3 {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.dept-footer p,
+.dept-footer a {
+  color: #d0d7e0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.dept-footer a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.dept-footer a:hover {
+  color: #20c4b5;
+}
+
+.dept-copyright {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #344054;
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .dept-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .dept-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dept-navbar {
+    flex-direction: column;
+  }
+
+  .dept-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dept-heading h2 {
+    font-size: 23px;
+  }
+
+  .dept-footer {
+    flex-direction: column;
+  }
+}

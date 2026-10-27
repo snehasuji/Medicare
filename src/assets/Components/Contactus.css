@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  background-color: #f2f7fa;
+  font-family: Arial, sans-serif;
+}
+
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.medicare-navbar {
+  background: linear-gradient(100deg, #11796f, #10b7a5);
+  padding: 12px 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.medicare-navbar .navbar-brand {
+  font-size: 22px;
+}
+
+.medicare-navbar .nav-link {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.medicare-navbar .nav-link:hover {
+  color: #d1fff8;
+}
+
+/* Heading */
+.contact-heading {
+  padding: 35px 15px 15px;
+}
+
+.contact-badge {
+  display: inline-block;
+  background: #d9f8f2;
+  color: #168b80;
+  padding: 6px 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.contact-heading h1 {
+  font-size: clamp(25px, 3vw, 38px);
+  color: #17212f;
+  margin-bottom: 12px;
+}
+
+.contact-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #596574;
+}
+
+/* Contact Cards */
+.contact-info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-card {
+  border: none;
+  border-top: 4px solid #17b6a5;
+  border-radius: 14px;
+  box-shadow: 0 7px 22px rgba(31, 62, 76, 0.08);
+  transition: transform 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card .card-title {
+  font-size: 19px;
+  color: #247d76;
+  margin-bottom: 15px;
+}
+
+.contact-card .card-text {
+  font-size: 13px;
+  color: #4d5967;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* Appointment Banner */
+.appointment-section {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.appointment-banner {
+  background: linear-gradient(100deg, #128779, #15bba9);
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.appointment-banner h3 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.appointment-banner p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.appointment-button {
+  background: white !important;
+  color: #16887e !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 12px 22px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+
+.appointment-button:hover {
+  background: #e0fff9 !important;
+}
+
+/* Footer */
+.medicare-footer {
+  margin-top: auto;
+  background: #10192d;
+  color: white;
+  padding: 30px 22px 0;
+}
+
+.medicare-footer h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.medicare-footer p {
+  color: #cbd3df;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.medicare-footer .nav-link {
+  color: #cbd3df;
+  padding: 3px 0;
+  font-size: 13px;
+}
+
+.medicare-footer .nav-link:hover {
+  color: #15c4b1;
+}
+
+.copyright {
+  margin-top: 20px;
+  border-top: 1px solid #293449;
+  padding: 17px 0;
+  color: #cbd3df;
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .contact-heading {
+    padding-top: 28px;
+  }
+
+  .appointment-banner {
+    padding: 22px;
+  }
+
+  .medicare-footer {
+    padding-top: 25px;
+  }
+}

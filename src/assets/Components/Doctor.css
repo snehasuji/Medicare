@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  background-color: #f0f5f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading section */
+.doc {
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.doc h1 {
+  color: #087f75;
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.doc p {
+  color: #172b45;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Doctor card rows */
+.part1,
+.par2,
+.part3 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 28px;
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 1400px;
+}
+
+/* Individual doctor card */
+.part1 .card,
+.par2 .card,
+.part3 .card {
+  width: 100%;
+  max-width: 410px;
+  flex: 1;
+  border: none;
+  border-top: 6px solid #12b8a6;
+  border-radius: 22px 22px 8px 8px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.part1 .card:hover,
+.par2 .card:hover,
+.part3 .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(8, 127, 117, 0.15);
+}
+
+/* Doctor image */
+.part1 .card-img-top,
+.par2 .card-img-top,
+.part3 .card-img-top {
+  width: calc(100% - 40px);
+  height: 280px;
+  margin: 25px 20px 0;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 16px;
+}
+
+/* Doctor name */
+.part1 .card-title,
+.par2 .card-title,
+.part3 .card-title {
+  color: #087f75;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+/* Doctor information */
+.part1 .card-text,
+.par2 .card-text,
+.part3 .card-text {
+  color: #172b45;
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 5px;
+}
+
+/* Information labels */
+.part1 .card-text b,
+.par2 .card-text b,
+.part3 .card-text b {
+  color: #172b45;
+  font-weight: 700;
+}
+
+/* Tablet responsive */
+@media (max-width: 900px) {
+  .part1,
+  .par2,
+  .part3 {
+    gap: 18px;
+    padding: 0 15px;
+  }
+
+  .part1 .card-title,
+  .par2 .card-title,
+  .part3 .card-title {
+    font-size: 22px;
+  }
+
+  .part1 .card-text,
+  .par2 .card-text,
+  .part3 .card-text {
+    font-size: 15px;
+  }
+
+  .part1 .card-img-top,
+  .par2 .card-img-top,
+  .part3 .card-img-top {
+    height: 230px;
+  }
+}

@@ -1,0 +1,26 @@
+.nav {
+  background-color: #149b91;
+  padding: 15px 25px;
+  align-items: center;
+}
+
+.nav h3 {
+  color: white;
+  margin: 0 25px 0 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.nav .nav-link {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.nav .nav-link:hover {
+  background-color: white;
+  color: #149b91;
+}

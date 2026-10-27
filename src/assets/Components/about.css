@@ -1,0 +1,277 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f8fa;
+  color: #263746;
+}
+
+.about-page {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #117c77, #16b7a6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  color: white;
+}
+
+.navbar h2 {
+  font-size: 25px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #d5fff8;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 25px;
+  padding: 35px;
+  background: linear-gradient(120deg, #ffffff, #e8fbf9);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #dce7e7;
+}
+
+.about-content {
+  flex: 2;
+}
+
+.tag {
+  display: inline-block;
+  background: #d9f7f1;
+  color: #087f78;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.about-content h1 {
+  font-size: 34px;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.about-content p {
+  color: #56636b;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.choose-box {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #e0ebeb;
+  border-top: 4px solid #18b5a5;
+}
+
+.choose-box h3 {
+  color: #187d78;
+  margin-bottom: 15px;
+}
+
+.choose-box ul {
+  padding-left: 20px;
+}
+
+.choose-box li {
+  font-size: 13px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* Mission, Vision, Promise */
+.values {
+  display: flex;
+  gap: 20px;
+  padding: 0 25px;
+  margin: 25px 0;
+}
+
+.value-card {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #e0e8e8;
+}
+
+.value-card h3 {
+  color: #187d78;
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  color: #59656d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Statistics */
+.statistics {
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  align-items: flex-start;
+}
+
+.stats-content {
+  flex: 2;
+}
+
+.stats-content h2 {
+  color: #187d78;
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+
+.stats-content p {
+  color: #56636b;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.stats-boxes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stat-card {
+  background: white;
+  text-align: center;
+  padding: 18px;
+  border-radius: 12px;
+  border-top: 3px solid #18b5a5;
+  box-shadow: 0 3px 12px #e0e8e8;
+}
+
+.stat-card h2 {
+  color: #187d78;
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 13px;
+}
+
+/* Footer */
+.footer {
+  background: #101a30;
+  color: white;
+  padding: 35px 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.footer div {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer h3 {
+  color: #ffffff;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.footer p,
+.footer a {
+  color: #d0d7e0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.footer a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer a:hover {
+  color: #20c4b5;
+}
+
+.footer .copyright {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #344054;
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    margin: 15px;
+    padding: 22px;
+  }
+
+  .about-content h1 {
+    font-size: 27px;
+  }
+
+  .values {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .statistics {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .stats-boxes {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
